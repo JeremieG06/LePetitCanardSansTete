@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=0, initial-scale=1.0" />
+    <title>Le petit canard sans tête</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!---navbar--->
+    <section>
+      <nav class="nav">
+        <div>
+          <img src="./media/ducklogo.jpg" class="navLogo" />
+        </div>
+        <div>
+          <h1>Le Petit Canard Sans Tête</h1>
+        </div>
+        <div class="middle">
+          <button class="extra">Coin</button>
+        </div>
+        <div class="navbuttons">
+          <div>
+            <input type="text" class="search" />
+            <button class="searchbutton">&#128269;</button>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!---titre + background image-->
+    <section>
+      <div class="title">
+        <h3>Gestion des stocks</h3>
+      </div>
+    </section>
+    <!---nouveaux produits-->
+    <form class="form">
+      <input type="text" name="nomProduit" placeholder="Produit" />
+      <select name="categorie" class="categorie">
+        <option value="Boisson Alcoolisée">Boisson Alcoolisée</option>
+        <option value="Boisson Non-Alcoolisée">Boisson Non-Alcoolisée</option>
+        <option value="Plat/Dessert">Plat/Dessert</option>
+      </select>
+      <input type="number" name="quantite" min="0" placeholder="Quantité" />
+      <input type="number" name="paht" min="O" placeholder="Prix d'Achat HT" />
+      <input type="number" name="pvht" min="O" placeholder="Prix de Vente HT" />
+      <span class="margeht"></span>
+      <span class="tva"></span>
+      <span class="pvttc"></span>
+      <input
+        type="number"
+        name="tauxAlcool"
+        class="tauxAlcool"
+        min="0"
+        placeholder="Taux d'alcool"
+      />
+      <button class="buttonAjouter">+</button>
+    </form>
+    <div class="separation"></div>
+    <!---produits existants-->
+    <section>
+      <table>
+        <tr>
+          <td>Produit</td>
+          <td>Catégorie</td>
+          <td>En Stock</td>
+          <td>Prix d'Achat HT</td>
+          <td>Prix de Vente HT</td>
+          <td>Marge HT</td>
+          <td>TVA</td>
+          <td>Prix de Vente TTC</td>
+          <td>Taux Alcool</td>
+        </tr>
+      </table>
+      <div class="copynouvelArticle"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
